@@ -1,0 +1,226 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+}
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #00b4db);
+    transform: translateY(-2px);
+}
+
+.project-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.language-selector {
+    max-width: 80px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Footer fixo na parte inferior */
+footer {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+
+/* Botão WhatsApp Flutuante */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+/* ... (estilos existentes permanecem iguais) */
+
+/* Estilos para os cartões de projeto */
+.project-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Estilos para o modal */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .project-card .d-flex {
+        flex-direction: column;
+    }
+
+    .project-card img {
+        max-width: 100%;
+    }
+
+    .modal-body iframe {
+        height: 200px;
+    }
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+}
+
+
+
+/* ... (estilos existentes permanecem iguais) */
+
+/* Estilos para o card de contato */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Estilos para os ícones de contato */
+.contact-icon {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: translateY(-5px);
+    color: #0056b3; /* Tom mais escuro do azul primário */
+}
+
+.contact-icon i {
+    font-size: 2rem;
+}
+
+.contact-icon span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .contact-icon i {
+        font-size: 1.5rem;
+    }
+
+    .contact-icon span {
+        font-size: 1rem;
+    }
+
+    .d-flex.gap-4 {
+        gap: 2rem;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}

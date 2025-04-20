@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LeonardoMira - Projetos</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column min-vh-100" data-lang="pt">
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">LeonardoMira</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-pt="Início" data-en="Home" data-es="Inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html" data-pt="Sobre" data-en="About" data-es="Acerca de">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projetos.html" data-pt="Projetos" data-en="Projects" data-es="Proyectos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html" data-pt="Contato" data-en="Contact" data-es="Contacto">Contato</a></li>
+                </ul>
+                <select class="form-select ms-3 w-auto language-selector" aria-label="Seletor de idioma">
+                    <option value="pt" selected>PT</option>
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow-1 py-5">
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0">
+                        <span class="text-gradient d-inline" 
+                              data-pt="Projetos" 
+                              data-en="Projects" 
+                              data-es="Proyectos">Projetos</span>
+                    </h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Project Card 1 -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder" 
+                                            data-pt="Sistema de Gestão NR36" 
+                                            data-en="NR36 Management System" 
+                                            data-es="Sistema de Gestión NR36">Sistema de Gestão NR36</h2>
+                                        <p data-translate 
+                                           data-pt="Sistema web para gestão de pausas e conformidade com a NR-36." 
+                                           data-en="Web system for managing breaks and NR-36 compliance." 
+                                           data-es="Sistema web para la gestión de pausas y cumplimiento de la NR-36.">
+                                           Sistema web para gestão de pausas e conformidade com a NR-36.
+                                        </p>
+                                    </div>
+                                    <img class="img-fluid" src="assets/projeto1.jpg" alt="Sistema de Gestão NR36" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 2 -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder" 
+                                        <h5 class="modal-title fw-bolder" id="projectModal2Label" 
+                                        data-pt="Comparador de Listas Excel" 
+                                        data-en="Excel List Comparator" 
+                                        data-es="Comparador de Listas Excel">Comparador de Listas Excel</h5>
+                                        <p data-translate 
+                                        data-pt="Aplicativo em Python que permite comparar listas contidas em dois arquivos Excel, facilitando a identificação de itens repetidos e não repetidos." 
+                                        data-en="Python application that enables the comparison of lists from two Excel files, simplifying the identification of repeated and unique items." 
+                                        data-es="Aplicación en Python que permite comparar listas contenidas en dos archivos Excel, facilitando la identificación de elementos repetidos y no repetidos.">
+                                        Aplicativo em Python que permite comparar listas contidas em dois arquivos Excel, facilitando a identificação de itens repetidos e não repetidos.
+                                        </p>
+                                    </div>
+                                    <img class="img-fluid" src="assets/projeto2.jpg" alt="Plataforma de E-commerce" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 3 -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 project-card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder" 
+                                            data-pt="Redimensionador de Imagens" 
+                                            data-en="Image Resizer" 
+                                            data-es="Redimensionador de Imágenes">Redimensionador de Imagens</h2>
+                                        <p data-translate 
+                                           data-pt="Aplicativo desktop para redimensionar imagens de forma eficiente." 
+                                           data-en="Desktop application for efficient image resizing." 
+                                           data-es="Aplicación de escritorio para redimensionar imágenes de manera eficiente.">
+                                           Aplicativo desktop para redimensionar imagens de forma eficiente.
+                                        </p>
+                                    </div>
+                                    <img class="img-fluid" src="assets/projeto3.jpg" alt="Redimensionador de Imagens" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Projeto 1 -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bolder" id="projectModal1Label" 
+                            data-pt="Sistema de Gestão NR36" 
+                            data-en="NR36 Management System" 
+                            data-es="Sistema de Gestión NR36">Sistema de Gestão NR36</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-translate 
+                           data-pt="Sistema web desenvolvido para empresas do setor de abate e processamento de carnes, garantindo a conformidade com a NR-36 por meio da documentação de pausas e assinaturas." 
+                           data-en="Web system developed for meat processing companies, ensuring NR-36 compliance through break documentation and signatures." 
+                           data-es="Sistema web desarrollado para empresas del sector de sacrificio y procesamiento de carnes, garantizando el cumplimiento de la NR-36 mediante la documentación de pausas y firmas.">
+                           Sistema web desenvolvido para empresas do setor de abate e processamento de carnes, garantindo a conformidade com a NR-36 por meio da documentação de pausas e assinaturas.
+                        </p>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/EcTkJyO5l-o" allowfullscreen></iframe>
+                        </div>
+                        <h6 data-pt="Tecnologias Utilizadas" data-en="Technologies Used" data-es="Tecnologías Utilizadas">Tecnologias Utilizadas</h6>
+                        <ul>
+                            <li><strong>Frontend:</strong> HTML5, CSS3 com Bootstrap, JavaScript</li>
+                            <li><strong>Backend:</strong> Python, Flask, Flask-Login, SQLAlchemy, MySQL</li>
+                            <li><strong>Geração de PDF:</strong> ReportLab</li>
+                        </ul>
+                        <a href="https://github.com/leonardoHMira" target="_blank" class="btn btn-outline-primary">
+                            <i class="bi bi-github me-2"></i>
+                            <span data-pt="Ver no GitHub" data-en="View on GitHub" data-es="Ver en GitHub">Ver no GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Projeto 2 -->
+        <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bolder" id="projectModal2Label" 
+                            data-pt="Comparador de Listas Excel" 
+                            data-en="Excel List Comparator" 
+                            data-es="Comparador de Listas Excel">Comparador de Listas Excel</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-translate 
+                        data-pt="Aplicativo em Python que permite comparar listas contidas em dois arquivos Excel, facilitando a identificação de itens repetidos e não repetidos." 
+                        data-en="Python application that enables the comparison of lists from two Excel files, simplifying the identification of repeated and unique items." 
+                        data-es="Aplicación en Python que permite comparar listas contenidas en dos archivos Excel, facilitando la identificación de elementos repetidos y no repetidos.">
+                        Aplicativo em Python que permite comparar listas contidas em dois arquivos Excel, facilitando a identificação de itens repetidos e não repetidos.
+                        </p>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/VUbUPw4YFxs" allowfullscreen></iframe>
+                        </div>
+                        <h6 data-pt="Tecnologias Utilizadas" data-en="Technologies Used" data-es="Tecnologías Utilizadas">Tecnologias Utilizadas</h6>
+                        <ul>
+                            <li>Python: Linguagem de programação principal</li>
+                            <li>tkinter & ttk: Biblioteca para criação de interfaces gráficas</li>
+                            <li>pandas: Para manipulação e análise de dados em tabelas</li>
+                            <li>ttkbootstrap: Para estilização moderna da interface</li>
+                        </ul>
+                        <a href="https://github.com/leonardoHMira" target="_blank" class="btn btn-outline-primary">
+                            <i class="bi bi-github me-2"></i>
+                            <span data-pt="Ver no GitHub" data-en="View on GitHub" data-es="Ver en GitHub">Ver no GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Projeto 3 -->
+        <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bolder" id="projectModal3Label" 
+                            data-pt="Redimensionador de Imagens" 
+                            data-en="Image Resizer" 
+                            data-es="Redimensionador de Imágenes">Redimensionador de Imagens</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-translate 
+                           data-pt="Aplicativo desktop que permite redimensionar uma ou várias imagens de forma eficiente, com interface intuitiva e suporte a múltiplos formatos (PNG, JPG, JPEG, GIF, BMP)." 
+                           data-en="Desktop application for resizing one or multiple images efficiently, with an intuitive interface and support for multiple formats (PNG, JPG, JPEG, GIF, BMP)." 
+                           data-es="Aplicación de escritorio que permite redimensionar una o varias imágenes de manera eficiente, con una interfaz intuitiva y soporte para múltiples formatos (PNG, JPG, JPEG, GIF, BMP).">
+                           Aplicativo desktop que permite redimensionar uma ou várias imagens de forma eficiente, com interface intuitiva e suporte a múltiplos formatos (PNG, JPG, JPEG, GIF, BMP).
+                        </p>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/q4DuHJJvtXI" allowfullscreen></iframe>
+                        </div>
+                        <h6 data-pt="Tecnologias Utilizadas" data-en="Technologies Used" data-es="Tecnologías Utilizadas">Tecnologias Utilizadas</h6>
+                        <ul>
+                            <li>Python</li>
+                            <li>Tkinter (interface gráfica)</li>
+                            <li>PIL (Pillow) para manipulação de imagens</li>
+                        </ul>
+                        <a href="https://github.com/leonardoHMira" target="_blank" class="btn btn-outline-primary">
+                            <i class="bi bi-github me-2"></i>
+                            <span data-pt="Ver no GitHub" data-en="View on GitHub" data-es="Ver en GitHub">Ver no GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4">
+        <div class="container px-4 px-lg-5">
+            <div class="text-center">
+                <div class="small" 
+                     data-pt="Copyright © LeonardoMira 2025" 
+                     data-en="Copyright © LeonardoMira 2025" 
+                     data-es="Copyright © LeonardoMira 2025">
+                    Copyright © LeonardoMira 2025
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5517996676893" class="whatsapp-float" target="_blank" title="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
